@@ -20,15 +20,11 @@ const Game = () => {
 
   const handleClick = (objKey) => {
 
-    console.log('before', cardStatus)
-
     cardStatus[objKey] ? cardStatus[objKey] = false : cardStatus[objKey] = true;     
     setCardStatus( prev => ({
       ...prev,
       objKey: !cardStatus[objKey]})
     );
-
-    console.log('after', cardStatus)
   }  
  
   const assetsValues = Object.values(assets);

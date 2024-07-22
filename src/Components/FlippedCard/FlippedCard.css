@@ -10,6 +10,7 @@
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.277);
     cursor: pointer;
     transition: all .2s ease-in-out;
+    perspective: 1000px;
 }
 
 .card-mimic{
@@ -20,4 +21,8 @@
 
 .flipped-card:hover{
     transform: scale(1.025);
+}
+
+.flipped-animation{
+    transform: rotateY(180deg);
 }
