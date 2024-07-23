@@ -3,9 +3,9 @@ import {React, useState, useEffect} from 'react'
 import './Game.css'
 import FlippedCard from '../FlippedCard/FlippedCard'
 import Card from '../Card/Card';
-import assets from '../../Assets/Json/assets.json';
 
-const Game = () => {
+// eslint-disable-next-line react/prop-types
+const Game = ({assetsCard}) => {
 
   const [cardStatus, setCardStatus] = useState({
     card1:false,
@@ -27,7 +27,7 @@ const Game = () => {
     );
   }  
  
-  const assetsValues = Object.values(assets);
+  const assetsValues = Object.values(assetsCard);
   return (
     <div className='game-square'>
         {assetsValues.map((value, key) => {

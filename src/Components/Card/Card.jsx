@@ -7,16 +7,11 @@ const Card = ({bc, image, tittle, funct, objKey}) => {
 
   const [cardClass, setCardClass] = useState('');
 
-  const handleMouseEnter = () => {
-
-    
-
-  }
 
   return (
     <div className='card'
-    onClick={() => funct(objKey)} 
-    onMouseEnter= {handleMouseEnter}>
+    onClick={() => funct(objKey)}
+    >
         <div className="card-top" style={{backgroundColor: `#${bc}`}}>
           <img src={image} alt='' className='card-img'/>
         </div>

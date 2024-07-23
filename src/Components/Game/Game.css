@@ -1,6 +1,6 @@
 .game-square{
-    min-width: 800px;
-    height:540px;
+    min-width: 600px;
+    height:500px;
     background-color: rgb(193, 193, 193);
     margin:auto;
     padding:15px;
