@@ -1,40 +1,37 @@
 import './App.css'
 import Game from './Components/Game/Game'
 import assets from './Assets/Json/cardgames.json';
+import {useState} from 'react';
 
 function App() {
   
-  let randomNumbers = [];
 
   const getFullyRandomNumber = () => {
+    let randomNumbers = []
     let number = 0;
-    while (randomNumbers.length < Object.values(assets).length){
-      number = Math.ceil(Math.random() * 8);
+    const max = Object.keys(assets).length;
+    while (randomNumbers.length < max){
+      number = Math.floor(Math.random() * max);
       if (!randomNumbers.includes(number)) randomNumbers.push(number);
     }
     return randomNumbers;
   }
 
-
-
   const getFullyRandomObject = () => {
     let randomlyAssetsData = {}
-
-    for (let i = 0; i < randomNumbers.length; i++) {
-      randomlyAssetsData[Object.keys(assets)[randomNumbers[i]]] = Object.values(assets)[randomNumbers[i - 1]]
+    let i = 0;
+    let newRandomNumbers = getFullyRandomNumber();
+    for (i = 0; i < Object.keys(assets).length; ++i) {
+      randomlyAssetsData[Object.keys(assets)[newRandomNumbers[i]]] = Object.values(assets)[newRandomNumbers[i]]
     }
 
-    console.log(randomlyAssetsData);
+    return randomlyAssetsData;
   }
-
-  randomNumbers = getFullyRandomNumber()
-  console.log(randomNumbers);
-  getFullyRandomObject();
 
   return (
     <div className='main'>
-      <Game assetsCard={assets}/>
-      <Game assetsCard={assets}/>
+      <Game assetsCard={getFullyRandomObject()}/>
+      <Game assetsCard={getFullyRandomObject()}/>
     </div>
   )
 }

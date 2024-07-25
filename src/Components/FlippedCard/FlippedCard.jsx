@@ -4,10 +4,14 @@ import React from 'react'
 import './FlippedCard.css'
 
 // eslint-disable-next-line react/prop-types
-const FlippedCard = ({id, funct, objKey}) => {
+const FlippedCard = ({id, funct, objKey, verifyClick}) => {
   
+  const disableClick = () => {
+
+  }
+
   return (
-    <div className='flipped-card' id={id} onClick={() => funct(objKey)}>
+    <div className='flipped-card' id={id} onClick={verifyClick? () => funct(objKey) : disableClick()}>
       <h1 className='card-mimic'>?</h1>
     </div>
   )
