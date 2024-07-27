@@ -10,3 +10,7 @@
     justify-content: space-around;
     grid-template-columns: auto auto auto auto;
 }
+
+.board-selected{
+    background-color: rgb(45, 45, 45);
+}

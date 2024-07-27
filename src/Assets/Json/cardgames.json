@@ -4,55 +4,63 @@
         "image": "/src/Assets/Images/gem1.png",
         "color": "e2a53b",
         "tittle": "Golden",
-        "id": "01"
+        "id": "01",
+        "choosed": false
     },
     "rubi-card":
     {
         "image": "/src/Assets/Images/gem2.png",
         "color": "810100",
         "tittle": "Rubi",
-        "id": "02"
+        "id": "02",
+        "choosed": false
     },
     "ametist-card":
     {
         "image": "/src/Assets/Images/gem3.png",
         "color": "5404a3",
         "tittle": "Ametist",
-        "id": "03"
+        "id": "03",
+        "choosed": false
     },
     "emerald-card":
     {
         "image": "/src/Assets/Images/gem4.png",
         "color": "002b03",
         "tittle": "Emerald",
-        "id": "04"
+        "id": "04",
+        "choosed": false
     },
     "rubelite-card":
     {
         "image": "/src/Assets/Images/gem5.png",
         "color": "981557",
         "tittle": "Rubelite",
-        "id": "05"
+        "id": "05",
+        "choosed": false
     },
     "topaz-card":
     {
         "image": "/src/Assets/Images/gem6.png",
         "color": "b76e21",
         "tittle": "Topaz",
-        "id": "06"
+        "id": "06",
+        "choosed": false
     },
     "safira-card":
     {
         "image": "/src/Assets/Images/gem7.png",
         "color": "001d57",
         "tittle": "Safira",
-        "id": "07"
+        "id": "07",
+        "choosed": false
     },
     "lapizlazuli-card":
     {
         "image": "/src/Assets/Images/gem8.png",
         "color": "4054eb",
         "tittle": "Lapiz",
-        "id": "08"
+        "id": "08",
+        "choosed": false
     }
 }

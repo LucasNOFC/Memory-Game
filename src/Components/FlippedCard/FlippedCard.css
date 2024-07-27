@@ -26,3 +26,7 @@
 .flipped-animation{
     transform: rotateY(180deg);
 }
+
+.card-blocked{
+    background-color: rgb(58, 58, 58);
+}

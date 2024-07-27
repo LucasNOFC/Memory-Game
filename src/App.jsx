@@ -1,10 +1,8 @@
 import './App.css'
 import Game from './Components/Game/Game'
 import assets from './Assets/Json/cardgames.json';
-import {useState} from 'react';
 
 function App() {
-  
 
   const getFullyRandomNumber = () => {
     let randomNumbers = []
@@ -21,17 +19,20 @@ function App() {
     let randomlyAssetsData = {}
     let i = 0;
     let newRandomNumbers = getFullyRandomNumber();
+
     for (i = 0; i < Object.keys(assets).length; ++i) {
       randomlyAssetsData[Object.keys(assets)[newRandomNumbers[i]]] = Object.values(assets)[newRandomNumbers[i]]
     }
-
     return randomlyAssetsData;
   }
 
+  const boardGame01 = getFullyRandomObject();
+  const boardGame02 = getFullyRandomObject();
+
   return (
     <div className='main'>
-      <Game assetsCard={getFullyRandomObject()}/>
-      <Game assetsCard={getFullyRandomObject()}/>
+      <Game assetsCard={boardGame01}/>
+      <Game assetsCard={boardGame02}/>
     </div>
   )
 }

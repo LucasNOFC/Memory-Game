@@ -9,6 +9,7 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: rgb(73, 110, 255);
 }
 
 .main{
