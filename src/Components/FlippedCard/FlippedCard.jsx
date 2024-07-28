@@ -10,7 +10,7 @@ const FlippedCard = ({id, funct, objKey, verifyClick = true, altClass, boardGame
   }
 
   const verifyTypeOfCard = (altClass, boardGameStatus) => {
-    if ((altClass) && (boardGameStatus)) console.log("STARBOY")
+    if ((altClass) && (boardGameStatus)) console.log("")
   }
 
   console.log(altClass);
